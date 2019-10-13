@@ -1,5 +1,5 @@
 # CSP - Content Security Policy
-Exemplos de implementações do CSP (Content Security Policy) que nos permiti criar regras de carregamento de recursos em nossas aplicações web.
+Este repositório fornece uma breve explicação sobre CSP e exemplos de sua implementação via html e servidores http.
 
 
 ## O que é?
