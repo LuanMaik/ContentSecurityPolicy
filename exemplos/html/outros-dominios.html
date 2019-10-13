@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carregamentos de outros domínios</title>
+
+    <!-- CSP config -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com;">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.js"></script>
+
+</head>
+<body>
+
+
+<h1>Carregamentos de outros domínios</h1>
+
+<p>
+    Normalmente precisamos utilizar bibliotecas de terceiros, utilizando urls de CDNs externos.<br>
+    O exemplo demonstra como configurar o carregamento de recursos de outros domínios.<br><br>
+    Este arquivo faz o carregamento do bootstrap e Jquery, utilizando a CDN do cloudflare.<br>
+    Abra o console do navegador e certifique-se de que não há erros de carregamento.
+</p>
+
+
+<div>
+    <xmp><meta http-equiv="Content-Security-Policy" content="default-src 'self' https://cdnjs.cloudflare.com;"></xmp>
+</div>
+
+<p>
+    A diretiva <i><b>default-src</b></i> é utilizada para qualquer tipo de carregamento (js, css, img, media, etc);<br>
+</p>
+
+<p>
+    O valor <i><b>'self'</b></i> define que seja permitido o carregamento de dados da mesma origem (domínio) deste arquivo.
+</p>
+<p>
+    O valor <i><b>'https://cdnjs.cloudflare.com'</b></i> define que seja permitido o carregamento de dados do domínio https://cdnjs.cloudflare.com.
+</p>
+
+</body>
+</html>

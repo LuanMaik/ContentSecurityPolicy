@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carregamentos de estilo em linha</title>
+
+    <!-- CSP config -->
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Carregamentos de estilo em linha</h1>
+
+<p>
+    Recursos processados em linha como <i>styles</i> do css, também precisam ser permitidos.<br>
+    Este exemplo demonstra como configurar o carregamento de css em linha.<br>
+    Abra o console do navegador e certifique-se de que não há erros de carregamento.
+</p>
+
+<div>
+    <xmp><meta http-equiv="Content-Security-Policy" content="style-src 'self' 'unsafe-inline'"></xmp>
+</div>
+
+<p>
+    A diretiva <i><b>style-src</b></i> é utilizada para regras de carregamento CSS;<br>
+</p>
+
+<p>
+    O valor <i><b>'self'</b></i> define que seja permitido o carregamento de dados da mesma origem (domínio) deste arquivo.
+</p>
+
+<p>
+    O valor <i><b>'unsafe-inline'</b></i> define que seja permitido o carregamento de estilos em linha.
+</p>
+
+</body>
+</html>

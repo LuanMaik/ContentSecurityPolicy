@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carregamentos de JS em linha</title>
+
+    <!-- CSP config -->
+    <meta http-equiv="Content-Security-Policy" content="style-src 'self'; script-src 'self' 'unsafe-inline'">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Carregamentos de script em linha</h1>
+
+<p>
+    Recursos processados em linha como <i>javascript</i>, também precisam ser permitidos.<br>
+    Este exemplo demonstra como configurar o carregamento de javascript em linha.<br>
+    Abra o console do navegador e certifique-se de que não há erros de carregamento.
+</p>
+
+<div>
+    <xmp><meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'"></xmp>
+</div>
+
+<p>
+    A diretiva <i><b>script-src</b></i> é utilizada para regras de carregamento de scripts;<br>
+</p>
+
+<p>
+    O valor <i><b>'self'</b></i> define que seja permitido o carregamento de dados da mesma origem (domínio) deste arquivo.
+</p>
+
+<p>
+    O valor <i><b>'unsafe-inline'</b></i> define que seja permitido o carregamento de scripts em linha.
+</p>
+
+<script>
+    alert('Carregamento de JS em linha.');
+</script>
+
+</body>
+</html>

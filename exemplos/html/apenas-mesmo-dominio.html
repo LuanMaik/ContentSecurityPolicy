@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carregamentos apenas do mesmo domínio</title>
+
+    <!-- CSP config -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';">
+    <script src="alert.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<h1>Carregamentos apenas do mesmo domínio</h1>
+
+<p>
+    O exemplo demonstra como configurar o carregamento de recursos apenas do mesmo domínio deste arquivo.<br>
+    Este arquivo faz o carregamento de 2 recursos do mesmo domínio, <i>alert.js</i> e <i>style.css</i>.<br>
+    Abra o console do navegador e certifique-se de que não há erros de carregamento.
+</p>
+
+<div>
+    <xmp><meta http-equiv="Content-Security-Policy" content="default-src 'self';"></xmp>
+</div>
+
+<p>
+    A diretiva <i><b>default-src</b></i> é utilizada para qualquer tipo de carregamento (js, css, img, media, etc);<br>
+</p>
+
+<p>
+    O valor <i><b>'self'</b></i> define que seja permitido o carregamento de dados da mesma origem (domínio) deste arquivo.
+</p>
+
+</body>
+</html>
