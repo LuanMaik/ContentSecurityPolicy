@@ -1,0 +1,18 @@
+
+# Permite o carregamento de qualquer recurso, desde que seja deste domínio
+#Header set Content-Security-Policy "default-src 'self';"
+
+# Permite o carregamento de qualquer recurso, desde que seja deste domínio ou do cdn da cloudflare
+#Header set Content-Security-Policy "default-src 'self' https://cdnjs.cloudflare.com;"
+
+# Permite o carregamento de estilos, desde que seja deste domínio ou em linha, ex: <style> body{} </style>
+#Header set Content-Security-Policy "style-src 'self' 'unsafe-inline';"
+
+# Permite o carregamento de scripts, desde que seja deste domínio ou em linha, ex: <script> alert('Olá') </script>
+#Header set Content-Security-Policy "script-src 'self' 'unsafe-inline';"
+
+# Define o padrão de carregamento para proibir qualquer carregamento,
+# define a regra de carregamento de estilos para permitir apenas do mesmo domínio, em linha ou da cdn da cloudflare,
+# define a regra de carregamento de scripts para permitir apenas do mesmo domínio, em linha ou da cdn da cloudflare,
+# desta forma só será permitido carregamento de css e js, desde que se enquadrem na regra
+Header set Content-Security-Policy "default-src none; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;"
