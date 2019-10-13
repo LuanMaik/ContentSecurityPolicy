@@ -27,6 +27,8 @@ Existem diretivas especificas para cada tipo de recurso:
 | media-src | Audios e vídeos |
 | plugin-types | MIME types do recurso, ex: application/pdf |
 
+Mais detalhes: (https://content-security-policy.com)
+
 ## Principais valores para as diretivas
 Existem diretivas especificas para cada tipo de recurso:
 
@@ -38,8 +40,8 @@ Existem diretivas especificas para cada tipo de recurso:
 | 'unsafe-inline' | Recursos em linha, ex: <style>, <scripts> |
 | https: | De origens seguras  |
 | domain.example.com | Origem permitida |
-
-
+  
+Mais detalhes: (https://content-security-policy.com)
 
 
 ## Configuração via HTML
