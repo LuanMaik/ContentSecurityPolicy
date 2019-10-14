@@ -10,7 +10,9 @@ As regras são configuradas a partir da combinação de diretivas e valores:
 
 Ex: `default-src 'self' https://cdnjs.cloudflare.com;`
 
-Permite o carregamento de qualquer recurso, desde que tenham como origem o mesmo domínio ou da CDN do CloudFlare.
+Aonde `default-src` é a diretiva e `'self' https://cdnjs.cloudflare.com` são os valores.
+
+No exemplo, a regra permite o carregamento de qualquer recurso, desde que tenham como origem o mesmo domínio (`'self'`) ou da CDN do CloudFlare (`https://cdnjs.cloudflare.com`).
 
 ## Principais Diretivas
 Existem diretivas especificas para cada tipo de recurso:
