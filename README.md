@@ -39,9 +39,9 @@ Existem diretivas especificas para cada tipo de recurso:
 | * | Qualquer origem |
 | 'none' | Nenhuma origem |
 | 'self' | Da mesma origem |
-| 'unsafe-inline' | Recursos em linha, ex: <style>, <scripts> |
+| 'unsafe-inline' | Recursos em linha, ex: `<style>`, `<scripts>` |
 | https: | De origens seguras  |
-| domain.example.com | Origem permitida |
+| domain.example.com | Origem especifica |
   
 Mais detalhes: (https://content-security-policy.com)
 
