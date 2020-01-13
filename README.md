@@ -1,5 +1,5 @@
 # CSP - Content Security Policy
-Este repositório fornece uma breve explicação sobre CSP e exemplos de sua implementação via html e servidores http.
+Este repositório fornece uma breve explicação sobre CSP e exemplos de sua implementação via html e arquivos de configuração de servidores web (apache e ngnix).
 
 
 ## O que é?
