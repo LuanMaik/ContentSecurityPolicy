@@ -3,7 +3,7 @@ Este repositório fornece uma breve explicação sobre CSP e exemplos de sua imp
 
 
 ## O que é?
-O CSP (Content Security Policy) nos permite definir regras de carregamento de recursos (css, js, img, etc) através de diretivas e reduzir os ricos de ataques via XSS. Essas regras podem ser definidas tanto via HTML quanto servidor (Apache, Nginx, etc).
+O CSP (Content Security Policy) nos permite definir regras de carregamento de recursos (css, js, img, etc) através de diretivas e com isso, reduzir os ricos de ataques via XSS. Essas regras podem ser definidas tanto via HTML quanto servidor (Apache, Nginx, etc).
 
 ## Como?
 As regras são configuradas a partir da combinação de diretivas e valores:
@@ -55,4 +55,4 @@ Veja os arquivos de código de exemplo neste repositório.
 
 
 ## Configuração via Servidor
-No servidor, podemos definir as regras de carregamento nos arquivos de configuração de acordo com o servidor http utilizado: Apache, Nginx, IIS, etc. Veja os arquivos de código de exemplo neste repositório. 
+No servidor, podemos definir as regras de carregamento nos arquivos de configuração de acordo com o servidor web utilizado: Apache, Nginx, IIS, etc. Veja os arquivos de código de exemplo neste repositório. 
